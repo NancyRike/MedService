@@ -41,7 +41,6 @@ body{
     list-style: none;
     text-align: right;
     margin-left: 35em;
-   
     overflow: hidden;
 }  
 .nav li{
@@ -53,9 +52,12 @@ body{
     text-decoration: none;
     border-bottom: 3px solid transparent;
 }
-.nav ul li:hover{
-    border-bottom: 2px solid rgb(11, 96, 116) !important;
+ .nav a:hover {
+    border-bottom:2px solid dotted #102235 !important;
 }
+/* .nav ul li hover{
+    border-bottom: 2px solid rgb(11, 96, 116) !important;
+} */
 li.active{
     border-bottom: 3px solid green;
 }
@@ -77,6 +79,46 @@ nav img{
     height: 35px;
     width: 35px;
     margin-top: 10px;
+}
+#subnav{
+    display: none;
+    position: absolute;
+    background-color: #3091c0;
+    overflow: auto;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,3.5);
+}
+#subnav ul{
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+    width: 15em;
+}
+#subnav li{
+    padding: 20px;
+}
+.subnav a:hover{
+    display: block;
+
+}
+.subnavebut button{
+    overflow: scroll;
+    color: white;
+    border: none;
+}
+.subnavebut:hover, .subnavebut:focus{
+    background-color: #37a8ec;
+}
+.subnavebut{
+    position: relative;
+    display: inline;
+}
+#dropbtn{
+    background-color: white;
+    color: #37a8ec;
+    margin: 3px;
+    font-size: 16px;
+
 }
 .icon {
     fill: white;
