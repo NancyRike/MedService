@@ -120,6 +120,19 @@ nav img{
     font-size: 16px;
 
 }
+input{
+    width: 15em;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 0px;
+    text-align: center;
+}
+select{
+    width: 15em;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+}
 .icon {
     fill: white;
 }

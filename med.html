@@ -49,10 +49,15 @@
                 <div class="subnav" id="subnav">
                    <form action="post">
                         <ul>
-                        <li> Name: <input type="text"></li>
-                        <li>Gender: <input type="text"></li>
-                        <li>Age: <input type="number"></li>
-                        <li>medical Speciality:<select name="" id="">
+                        <li> Name: <input type="text" id="pName"></li>
+                        <li>Gender:  <select name="" id="pGender">
+                                <option value=""></option>
+                                <option value="male">male</option>
+                                <option value="female">Female</option>
+                                <option value="others">others</option>
+                            </select></li>
+                        <li>Age: <input type="number" id="pAge"></li>
+                        <li>medical Speciality:<select name="" id="pSpecs">
                             <option value=""></option>
                             <option value="O&G">O&G</option>
                             <option value="Cardiology">Cardiology</option>
@@ -60,11 +65,13 @@
                             <option value="Neurology">Neurology</option>
                             <option value="General heck-up">General check-up</option>
                             <option value="Pediatrics">Pediatrics</option>        
-                                </select><hr/>
+                                </select>
                         </li>
-                        <li>phonenumber:<input type="number"></li>
+                        <li>phonenumber:<input type="number" id="pNumber"></li>
+                        <li>Symptom: <input type="text" id="pSymptom"></li>
+                        <li><input type="submit"value="submit" id="submit" style="width: 5em; border: 1px solid #3e3e3e;"></li>
                     </ul>
-                    <input type="submit"value="submit" style="text-align: center;">
+                    
                 </form>
                 </div>
            </div>                
@@ -99,7 +106,7 @@
                 you met with. </p>
                 <button>View Timetable</button>
         </div2>
-        <div3>
+        <div3 id="showAppoint">
             <h3>Appointment</h3>
                <p>Doctors on call stay on a 24hours
                 shift and usually get very exhausted 
