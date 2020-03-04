@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/med.css">
     <title>Medservice</title>
 </head>
-<body>
+<body  onload="onDomMount()">
+   
     <header>
         <div class="topnav">
            <div>
@@ -106,15 +107,15 @@
                 you met with. </p>
                 <button>View Timetable</button>
         </div2>
-        <div3 id="showAppoint">
-            <h3>Appointment</h3>
-               <p>Doctors on call stay on a 24hours
+        <div3>
+            <h3 id="showAppoint">Appointment</h3>
+               <p id="theappiont">Doctors on call stay on a 24hours
                 shift and usually get very exhausted 
                 so we do not advice them treating
                 patients until after days of rest 
                 so you may not meet the same doctor 
                 you met with. </p>
-                <button>Book Appointment</button>
+                <button id="cancelbutton">Cancel Appointment</button>
         </div3>
         <div4>
             <h3>Emergency Call</h3>
