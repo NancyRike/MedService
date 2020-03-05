@@ -311,13 +311,17 @@ cursor: pointer;
 .footagan a{
     color: #0c8edf;
 }
-@media screeen and (min-width: 480px){
+/* @media screeen and (min-width: 480px){ 
     body { text-align:center;
     }
 }
-/* @media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px){
     .topnav{
         
     }
 
-} */
+ }  */
+ @media screen and (max-width: 576px){
+
+ }
+ 
