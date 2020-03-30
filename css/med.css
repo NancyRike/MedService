@@ -1,24 +1,24 @@
 body{
-    /* box-sizing: border-box; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
-     margin: 0 auto;
+     margin: 0;
      padding: 0;
+  
 }
 .topnav{
     background-color:#00A2C7;
     color: white;
     text-align: left;
     display: flex;
+    justify-content: space-between;
     padding-left: 4em;
-    padding-right: 4em;
+    padding-right: 12em;
 }
 .topnav p{
     font-size: 12px;
     margin: 2px 20px;
     margin-bottom: 0;
     display: flex;
-    margin-right:70em;
     padding: 6px 0;  
 }
 #imgIcon{
@@ -26,8 +26,6 @@ body{
 
 }
 .nav{
-    text-align: left;
-    padding:0 4em;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -36,45 +34,40 @@ body{
 }
 .nav .logo{
     display: flex;
+    margin-left: 5em;
 }
 .nav ul{
     list-style: none;
-    text-align: right;
-    margin-left: 35em;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
 }  
 .nav li{
-    display: inline-block;
+    display: inline;
 }
 .nav li a{
     color: #37a8ec;
     padding: 14px 16px;
     text-decoration: none;
     border-bottom: 3px solid transparent;
+
 }
  .nav a:hover {
     border-bottom:2px solid dotted #102235 !important;
 }
-/* .nav ul li hover{
-    border-bottom: 2px solid rgb(11, 96, 116) !important;
-} */
-li.active{
-    border-bottom: 3px solid green;
-}
 .nav h4{
     display: inline;
 }
-nav button{
+.nav button{
     
     padding: 5px;
     border-radius: 5px;
     border: none;
-
 }
-.nav a{
+ .nav a{
   
     color: black;  
-}
+} 
 nav img{
     height: 35px;
     width: 35px;
@@ -111,7 +104,7 @@ nav img{
 }
 .subnavebut{
     position: relative;
-    display: inline;
+    /* display: inline; */
 }
 #dropbtn{
     background-color: white;
@@ -140,10 +133,10 @@ select{
     background-image: url("../img/choice2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
-    height: 400px;
+    /* background-position: center; */
+    height: 24em;
     font-size: 15px;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding: 4em;   
 }
 .banner h5{
@@ -179,22 +172,20 @@ h2{
 }
 .banner img{
     width: 100%;
-    height: 500px;    
+    height: 60%;    
 }
 .schedule{
-    height: 260px;
     width: 60%;
     margin: auto;
-    position: absolute;
-    top: 470px;
-    left: 290px;
     display: flex;
     color: floralwhite;
+    margin-top: -5em;
+    
     
 }
 .schedule div{
     margin-left: 1px;
-    background-color: #3091c0;
+    /* background-color: #3091c0; */
     text-align: left;
 
 }
@@ -205,34 +196,34 @@ h2{
 /* .schedule hr{
     /* margin: 0;*/
 /* } */
-div1{
-    background-color: #37a8ec;
+.div1{
+    background-color: #2cabfa;
     width: 55em;
     padding: 15px;
 }
-div2{
-    background-color: #0c8edf;
+.div2{
+    background-color: #097fc9;
     width: 55em;
     padding: 15px;
 }
-.schedule div2 button{
+.schedule .div2 button{
     background-color: #0c8edf;
     border: 2px solid white;
     border-radius: 4px;
     padding: 5px;
 }
-div3{
+.div3{
     background-color: #2f84d0;
     width: 55em;
     padding: 15px;
 }
-.schedule div3 button{
+.schedule .div3 button{
     background-color: #2f84d0;
     border: 2px solid white;
     border-radius: 4px;
     padding: 5px;
 }
-div4{
+.div4{
     background-color: #1766b2;
     width: 55em;
     padding: 15px;
@@ -240,16 +231,17 @@ div4{
 
 .solutions{
     display: flex;
+    justify-content: space-around;
     text-align: left;
-    width: 1000px;
-    padding-top: 90px;
-    margin-top: 12em;
+    width: 75%;
+    /* padding-top: 90px; */
+    margin-top: 2em; 
     margin-left: auto;
     margin-right: auto;
 }
 .solutions img{
-    height: 220px;
-    width: 500px;
+    height: 16em;
+    width: 28em;
     margin-right: 35px;
     
 }
@@ -261,13 +253,13 @@ div4{
     /* font-family: ; */
 }
 .solutions h6{
-    margin: 0;
+    margin:0;
     color:#3091c0;
     text-transform: uppercase;
     flex: none;
 }
 .solutions p {
-    font-size: 10px;
+    font-size: 12px;
     /* flex: none; */
 }
 button{
@@ -311,17 +303,69 @@ cursor: pointer;
 .footagan a{
     color: #0c8edf;
 }
-/* @media screeen and (min-width: 480px){ 
-    body { text-align:center;
+@media screen and (max-width: 1350px){
+    .schedule{
+        display: block;
+        width: 68%;
+    }
+    .schedule div{
+        text-align: center;
     }
 }
-@media screen and (max-width: 1440px){
-    .topnav{
-        
+@media screen and (max-width: 1100px){
+    .schedule{
+        display: block;
+        width: 93%;
     }
+    .solutions{
+        margin-top: 2em;
+        display: block;
+        text-align: center;
+    }
+    .solutions p{
+        margin: 0 4em;
+    }
+}
+@media screen and (max-width: 992px){
+    .nav{
+        display: inline-block;
+        align-self: center;
+        width: 100%;
+    }
+    #navChild a{
+        display:block;
+        border-bottom: 1px dotted grey;
+        width: 100%;
+    }
+    .schedule{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+     .banner{
+        padding: 2em; 
+        height: 19em;
 
- }  */
- @media screen and (max-width: 576px){
-
- }
- 
+    }
+    h2{
+       margin: 7px 0;
+       font-size: 44px;
+    }
+}
+@media screen and (max-width: 576px){
+    body{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 576px){
+    body{
+        text-align: center;
+    }
+   .footagan{
+       text-align: center;
+   }
+}
